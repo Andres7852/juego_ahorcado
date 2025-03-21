@@ -2,7 +2,13 @@ from src.model.juego import Juego
 
 from src.view.menu import Menu
 
-if __name__ == "__main__":
-    juego: Juego = Juego()
-    menu: Menu = Menu(juego)
+def main():
+    """
+    Función principal que inicializa el juego del Ahorcado.
+    """
+    juego = Juego()
+    menu = Menu(juego)
     menu.iniciar()
+
+if __name__ == "__main__":
+    main()
